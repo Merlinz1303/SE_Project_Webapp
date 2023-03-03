@@ -1,13 +1,16 @@
 .information_main{
-    background-color: rgb(46, 49, 63);
+    background-color: rgb(46, 49, 63)
+    
   
+}
+body{
+    margin: 0;
 }
 
 .text1{
     font-size: 30px;
     color:white;
     text-align: center;
-    padding: 30px;
 }
 
 .text2{
@@ -36,13 +39,3 @@
     padding: 70px;
 }
 
-.Footer{
-    display: block;
-    width: 1000px;
-}
-
-.Menu_bar{
-    display: block;
-    width: 1000px;
-
-}
