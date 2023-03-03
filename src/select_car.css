@@ -1,0 +1,67 @@
+.select_car_main{
+    background-color: rgb(255, 255, 255);
+  
+}
+.text{
+    font-size: 30px;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.select_car_grid{
+    display: grid;
+    column-gap: 150px;
+    row-gap: 70px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-bottom: 400px;
+    padding-top: 10px;
+    
+}
+
+.car_img{
+    display: block;
+    width: 350px;
+    height: 300px;
+    border: 2px solid rgb(3, 3, 3);
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding-left: 15px;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.car_text{
+    font-size: 25px;
+    color: black;
+}
+
+.logo_grid{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 50px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 150px;
+}
+
+.logo_img{
+    display: block;
+   /*  width: 170px;
+    height: 170px;
+    border: 2px solid rgb(3, 3, 3);
+    box-sizing: border-box;
+    border-radius: 12px; */
+    padding-left: 10px;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+

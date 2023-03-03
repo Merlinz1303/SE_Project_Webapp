@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.logo_top{
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-right: 30px;
+}
+
+.nav{
+    
+    background-color:#333c4d;
+    display: flex;
+    justify-content:stretch;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 0.5rem;  
+
+}
+
+.site_title{
+    font-size: 50px;    
+}
+
+.menu_text{
+    font-size: 20px;
+  
+}
+
+.user_text{
+    font-size: 30px;
+    padding-left: 1000px;
+}
+
+
+.nav a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    padding: 1rem;
+    color:white;
+    align-items: center;
+    justify-content: stretch;
+ 
+}
+
+.nav ul{
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    
+}
+
+
+
+.nav li.active{
+    background-color: #333c4d;
+}
+
+.nav li:hover{
+    background-color: #777;
+}
+

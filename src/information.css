@@ -1,0 +1,48 @@
+.information_main{
+    background-color: rgb(46, 49, 63);
+  
+}
+
+.text1{
+    font-size: 30px;
+    color:white;
+    text-align: center;
+    padding: 30px;
+}
+
+.text2{
+        font-size: 20px;
+        color: rgb(253, 253, 253);
+        margin-left: 120px;
+        padding-top: 30px;
+
+}
+
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+ 
+    
+}
+.rect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.Footer{
+    display: block;
+    width: 1000px;
+}
+
+.Menu_bar{
+    display: block;
+    width: 1000px;
+
+}

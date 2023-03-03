@@ -1,0 +1,44 @@
+
+
+.Main {
+    background-color: #ffffff;
+}
+
+.contact_pic{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+ 
+    
+}
+.main_header{
+    background-image: "/images/Menu bar.png";
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
+.text{
+    color : rgb(0, 0, 0) ;
+    font-size: 20px ;
+}
+
+.Menu_bar{
+
+}
+
+.Banner{
+
+}
+
+.BG_Contact{
+
+}
+
+.Footer{
+
+}
+
