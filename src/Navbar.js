@@ -1,32 +1,19 @@
+import { Link ,useMatch, useResolvedPath} from 'react-router-dom';
 import './navbar.css';
-function Navbar(){
+
+export default function Navbar(){
     return(
         <nav className='nav'>
             <div className='logo_top' >
                 <img src={("/images/LOGO.png")} width={150}  height={20}></img>
             </div>  
             <ul>
-                <li className='active'>
-                    <a href='/information' className='menu_text' >เกี่ยวกับ</a>
-                </li>
-                <li className='active'>
-                    <a href='/select_car' className='menu_text' >เลือกรถ</a>
-                </li>
-                <li className='active'>
-                    <a href='=/register' className='menu_text'>วิธีสมัคร</a>
-                </li>
-                <li className='active'>
-                    <a href='=/contact' className='menu_text'>ติดต่อ/สอบถาม</a>
-                </li>
-                <li className='active'>
-                    <a href='=/Booking' className='menu_text'>ข้อมูลการจอง</a>
-                </li>
-                <li className='active'>
-                    <a href='=/lessing' className='menu_text'>ข้อมูลสัญญาเช่าซื้อ</a>
-                </li>
-                <li className='active'>
-                    <a href='=/user' className='user_text'></a>
-                </li>
+                <CustomLink to ='/Information' className='menu_text' >เกี่ยวกับ</CustomLink>  
+                <CustomLink to ='/Select_car' className='menu_text' >เลือกรถ</CustomLink>
+                <CustomLink to ='/Register' className='menu_text'>วิธีสมัคร</CustomLink>
+                <CustomLink to ='/Contact' className='menu_text'>ติดต่อ/สอบถาม</CustomLink>
+                <CustomLink to ='/Booking' className='menu_text'>ข้อมูลการจอง</CustomLink>
+                <CustomLink to ='/Lessing' className='menu_text'>ข้อมูลสัญญาเช่าซื้อ</CustomLink>
                 {/* <li className='active'>
                     <a href='=/user' className='user_text' > User</a>
                 </li>  */}
@@ -37,4 +24,15 @@ function Navbar(){
 
 } 
 
-export default Navbar
+function CustomLink({ to,children, ...proops }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end:true})
+    return(
+        <li className ={isActive ? "active" : ""}>
+            <Link to = {to} {...proops}>
+                {children}
+            </Link>
+        </li>
+    )
+
+}

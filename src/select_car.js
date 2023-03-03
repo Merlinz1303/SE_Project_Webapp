@@ -1,11 +1,8 @@
-import Navbar from './Navbar';
-import Navbar_Footer from './navbar_Footer';
 import './select_car.css';
 
 function select_car(){
     return(
         <div className='select_car_main'>
-            <Navbar/>
             <p className='text'>เลือกรถที่คุณต้องการ</p>
             <div className='logo_grid'>
                 <div className='logo_img' >
@@ -84,7 +81,6 @@ function select_car(){
                 
                 
             </div>
-            <Navbar_Footer/>
         </div>
     );
 }

@@ -1,10 +1,7 @@
 import './information.css';
-import Navbar_Footer from './navbar_Footer';
-import Navbar from './Navbar';
 function information(){
     return(
         <div className='information_main'>
-            <Navbar/>
             <p className='text1'>ข้อมูลส่วนตัว</p>
             <div className='profile'>
                 <img  src= {("/images/Profile_pic.png")} width={400} height={400}></img>
@@ -23,8 +20,6 @@ function information(){
             <div className='rect'>
                 <img src = {("images/Rectangle 75.png")}></img>
             </div>
-            <Navbar_Footer/>
-            
         </div>
     );
 }

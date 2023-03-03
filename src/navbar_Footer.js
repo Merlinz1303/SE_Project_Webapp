@@ -9,16 +9,16 @@ function navbar_Footer(){
             <ul>
                 <a className='menu'>เมนู</a>
                 <li className='active'>
-                    <a href='main' className='menutext'>หน้าหลัก</a>
+                    <a href='/Main' className='menutext'>หน้าหลัก</a>
                 </li>
                 <li className='active'>
-                    <a href='information' className='menutext'>เกี่ยวกับ</a>
+                    <a href='/Information' className='menutext'>เกี่ยวกับ</a>
                 </li>
                 <li className='active'>
-                    <a href='register' className='menutext'>วิธีสมัคร</a>
+                    <a href='/Register' className='menutext'>วิธีสมัคร</a>
                 </li>
                 <li className='active'>
-                    <a href='contact' className='menutext'>ติดต่อ/สอบถาม</a>
+                    <a href='/Contact' className='menutext'>ติดต่อ/สอบถาม</a>
                 </li>
             </ul>
             <ul>
