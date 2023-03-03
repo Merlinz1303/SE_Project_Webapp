@@ -20,6 +20,9 @@ export default function navbar_Footer(){
             </ul> 
             <ul>
                 <a className='menu'>ติดตามเรา</a>
+                    <img claseeName = 'Contact_Footer' src={("/images/logo/face.png")} ></img>
+                    <img claseeName = 'Contact_Footer' src={("/images/logo/youtube.png")} ></img>
+                    <img claseeName = 'Contact_Footer' src={("/images/logo/line.png")} ></img>
             </ul> 
 
         </div>
