@@ -8,18 +8,10 @@ export default function navbar_Footer(){
             </div>  
             <ul>
                 <a className='menu'>เมนู</a>
-                <li className='active'>
-                    <a href='/Main' className='menutext'>หน้าหลัก</a>
-                </li>
-                <li className='active'>
-                    <a href='/Information' className='menutext'>เกี่ยวกับ</a>
-                </li>
-                <li className='active'>
-                    <a href='/Register' className='menutext'>วิธีสมัคร</a>
-                </li>
-                <li className='active'>
-                    <a href='/Contact' className='menutext'>ติดต่อ/สอบถาม</a>
-                </li>
+                <CustomLink2 to ='/Main' className='menutext'>หน้าหลัก</CustomLink2>
+                <CustomLink2 to ='/Information' className='menutext'>เกี่ยวกับ</CustomLink2>  
+                <CustomLink2 to ='/Register' className='menutext'>วิธีสมัคร</CustomLink2>
+                <CustomLink2 to ='/Contact' className='menutext'>ติดต่อ/สอบถาม</CustomLink2>
             </ul>
             <ul>
                 <a className='menu'>ติดต่อเรา</a>
@@ -34,7 +26,7 @@ export default function navbar_Footer(){
     );
 }
 
-function CustomLink({ to,children, ...proops }) {
+function CustomLink2({ to,children, ...proops }) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end:true})
     return(
