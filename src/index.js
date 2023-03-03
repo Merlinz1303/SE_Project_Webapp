@@ -15,7 +15,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Select_car/>
-    {/* Test  */}
   </React.StrictMode>
 );
 
