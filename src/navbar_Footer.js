@@ -1,6 +1,6 @@
 import './navbar_Footer.css';
-
-function navbar_Footer(){
+import { Link ,useMatch, useResolvedPath} from 'react-router-dom';
+export default function navbar_Footer(){
     return(
         <div className='nav_foot'>
             <div className='logo' >
@@ -34,4 +34,15 @@ function navbar_Footer(){
     );
 }
 
-export default navbar_Footer
+function CustomLink({ to,children, ...proops }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end:true})
+    return(
+        <li className ={isActive ? "active" : ""}>
+            <Link to = {to} {...proops}>
+                {children}
+            </Link>
+        </li>
+    )
+
+}
