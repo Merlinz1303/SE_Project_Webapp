@@ -5,30 +5,35 @@ function select_car(){
         <div className='select_car_main'>
             <p className='text'>เลือกรถที่คุณต้องการ</p>
             <div className='logo_grid'>
+                {/* MG */}
                 <div className='logo_img' >
                     <img src={("/images/logo/logo1.png")} width={150} height={150}></img>
                 </div>
-                <div className='logo_img'>
+{/*                 <div className='logo_img'>
                     <img src={("/images/logo/logo2.png")} width={150} height={150}></img>
-                </div>
+                </div> */}
+                {/* AUDI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo3.png")} width={150} height={150}></img>
                 </div>
+                {/* BMW */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo4.png")} width={150} height={150}></img>
                 </div>
-                <div className='logo_img'>
+{/*                 <div className='logo_img'>
                     <img src={("/images/logo/logo5.png")} width={150} height={150}></img>
-                </div>
+                </div> */}
+                {/* MINI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo6.png")} width={150} height={150}></img>
                 </div>
-                <div className='logo_img'>
+{/*                 <div className='logo_img'>
                     <img src={("/images/logo/logo7.png")} width={150} height={150}></img>
-                </div>
-                <div className='logo_img'>
+                </div> */}
+{/*                 <div className='logo_img'>
                     <img src={("/images/logo/logo8.png")} width={150} height={150}></img>
-                </div>
+                </div> */}
+                {/* Tesla */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo9.png")} width={150} height={150}></img>
                 </div>
