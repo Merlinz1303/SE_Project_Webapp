@@ -14,9 +14,9 @@ export default function Navbar(){
                 <CustomLink to ='/Contact' className='menu_text'>ติดต่อ/สอบถาม</CustomLink>
                 <CustomLink to ='/Booking' className='menu_text'>ข้อมูลการจอง</CustomLink>
                 <CustomLink to ='/Lessing' className='menu_text'>ข้อมูลสัญญาเช่าซื้อ</CustomLink>
-                {/* <li className='active'>
-                    <a href='=/user' className='user_text' > User</a>
-                </li>  */}
+                <b> 
+                <CustomLink to ='/user' className='user_text' > User</CustomLink> 
+                </b>
             </ul>
         </nav>
         
