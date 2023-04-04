@@ -54,7 +54,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr ;
     padding-bottom: 100px;
     padding-top: 10px;
-    padding-left: 100px;
+    padding-left: 200px;
 }
 
 .information_text3{
@@ -71,4 +71,55 @@ body{
 .car_img{
     align-items: center;
     justify-content: center;
+}
+
+.bg_information2{
+    display: grid;
+    background-color: rgba(172, 169, 169, 0.325);
+    column-gap: 20px;
+    row-gap: 15px;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+
+.box{
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(3, 3, 3);
+    box-sizing: border-box;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2{
+    display: block;
+    background-color: white;
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(3, 3, 3);
+    box-sizing: border-box;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box{
+    padding-left: 70px;
+    font-size: 20px;
+}
+
+.text-box2{
+    padding-left: 170px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }

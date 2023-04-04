@@ -17,10 +17,16 @@ function information(){
                 <img claseeName = 'card_img' src={("/images/card3.png")}></img>
             </div>
             <p className='information_text2'>ข้อมูลส่วนตัว</p>
-            <div className='bg_information'>
-                <p className='information_text3'>ข้อมูลรูปบัตรประชาชน</p>
-                <p className='information_text4'>ข้อมูลรูปถ่าย</p>
-                <p className='information_text4'>ข้อมูลรูปใบขับขี่</p>
+            <div className='bg_information2'>
+                <p className='box text-box'>นาย</p>
+                <p className='box2 text-box2'>ชื่อ</p>
+                <p className='box2 text-box2'>นามสกุล</p>
+                <p className='box text-box'>สัญชาติ</p>
+                <p className='box2 text-box2'>เลขบัตรประชาชน</p>
+                <p className='box2 text-box2'>เบอร์โทร</p>
+                <p className='box text-box'>วันเกิด</p>
+                <p className='box2 text-box2'>สถานะ</p>
+                <p className='box2 text-box2'>Email</p>
             </div>
         </div>
     );
