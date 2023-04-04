@@ -28,6 +28,16 @@ function information(){
                 <p className='box2 text-box2'>สถานะ</p>
                 <p className='box2 text-box2'>Email</p>
             </div>
+            <p className = 'information_text2'>ที่อยู่</p>
+            <div className=' bg_information3'>
+                <p className='box3 text-box3'>ที่อยู่</p>
+            </div>
+            <div className='bg_information4'>
+                <p className='box4 text-box' > ตำบล</p>
+                <p className='box4 text-box'>อำเภอ</p>
+                <p className='box4 text-box'>จังหวัด</p>
+                <p className='box4 text-box'>รหัสไปรษณีย์</p> 
+            </div>
         </div>
     );
 }
