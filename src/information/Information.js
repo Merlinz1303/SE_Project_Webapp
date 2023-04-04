@@ -38,7 +38,14 @@ function information(){
                 <p className='box4 text-box'>จังหวัด</p>
                 <p className='box4 text-box'>รหัสไปรษณีย์</p> 
             </div>
-            
+            <p className='information_text2'>ข้อมูลบริษัท</p>
+            <div className='bg_information5'>
+                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box2'>asd</p>
+            </div>
         </div>
     );
 }

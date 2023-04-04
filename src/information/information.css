@@ -183,3 +183,28 @@ body{
     padding-left: 130px;
 }
 
+.box5{
+    display: block;
+    background-color: white;
+    width: 600px;
+    height: 60px;
+    border: 2px solid rgb(3, 3, 3);
+    box-sizing: border-box;
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.bg_information5{
+    display: grid;
+    background-color: rgba(172, 169, 169, 0.325);
+    column-gap: 0px;
+    row-gap: 15px;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto; 
+    grid-template-columns: 1fr 1fr  ;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-left: 130px;
+}
