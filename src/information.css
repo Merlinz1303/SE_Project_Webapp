@@ -1,3 +1,4 @@
+/* Pattarapong Thanakiethirun 6130300654 */
 .information_main{
     background-color: rgb(46, 49, 63)
     
@@ -7,17 +8,20 @@ body{
     margin: 0;
 }
 
-.text1{
+.information_text1{
     font-size: 30px;
     color:white;
     text-align: center;
+    margin-top: 0px;
 }
 
-.text2{
+.information_text2{
         font-size: 20px;
         color: rgb(253, 253, 253);
-        margin-left: 120px;
-        padding-top: 30px;
+        margin-left: 650px;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-bottom: 50px;
 
 }
 
@@ -39,3 +43,32 @@ body{
     padding: 70px;
 }
 
+.bg_information{
+    display: grid;
+    background-color: rgba(172, 169, 169, 0.325);
+    column-gap: 150px;
+    row-gap: 70px;
+    max-width: 1800px;
+    margin-right: auto;
+    margin-left: auto; 
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.information_text3{
+    color: black;
+    font-size: 20px;
+    padding-left: 50px;
+}
+.information_text4{
+    color: black;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.car_img{
+    align-items: center;
+    justify-content: center;
+}
