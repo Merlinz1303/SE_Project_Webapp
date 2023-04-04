@@ -1,10 +1,10 @@
 import './App.css';
-import Navbar from './navbar/Navbar';
-import Select_car from './select_car';
-import Navba_footer from './navbar/navbar_Footer';
-import Booking from './Booking_car';
-import Information from './information/Information';
-import Contact from './contact/Contact';
+import Navbar from '../navbar/Navbar';
+import Select_car from '../car/select_car';
+import Navba_footer from '../navbar/navbar_Footer';
+import Booking from '../Booking/Booking_car';
+import Information from '../information/Information';
+import Contact from '../contact/Contact';
 import {Route, Routes } from 'react-router-dom';
 
 export default function App() {
