@@ -38,6 +38,7 @@ function information(){
                 <p className='box4 text-box'>จังหวัด</p>
                 <p className='box4 text-box'>รหัสไปรษณีย์</p> 
             </div>
+            
         </div>
     );
 }
