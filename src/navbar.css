@@ -17,6 +17,7 @@ body{
     background-color:#333c4d;
     display: flex;
     align-items: center;
+    justify-content: stretch;
     gap: 0.5rem;
     padding: 0 0.5rem;  
 
