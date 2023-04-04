@@ -46,6 +46,7 @@ function information(){
                 <p className='box5 text-box2'>asd</p>
                 <p className='box5 text-box2'>asd</p>
             </div>
+            <div className='bg_informationFree'></div>
         </div>
     );
 }
