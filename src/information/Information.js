@@ -1,13 +1,31 @@
 /* Pattarapong Thanakiethirun 6130300654 */
 import './information.css';
+import axios from 'axios';
+import React, { useContext, useEffect, useState } from "react";
+
 function information(){
+
+    const [data, sendData] = useState([]);
+    useEffect(() => {
+        axios
+          .get("http://localhost:3000/api", {
+            // amount: totalAmount,
+            // email: "jamkapp556@gmail.com",
+          })
+          .then((response) => {
+            console.log(response.data);
+            sendData(response.data[0])
+          });
+      }, []);
+
+    console.log(data)
     return(
         <div className='information_main'>
             <p className='information_text1'>ข้อมูลส่วนตัว</p>
             <div className='profile'>
                 <img  src= {("/images/Profile_pic.png")} width={400} height={400}></img>
             </div>
-            <p className='information_text1'>Pattarapong Thanakiethirun</p>
+            <p className='information_text1'>{data.username}</p>
             <div className='bg_information'>
                 <p className='information_text3'>ข้อมูลรูปบัตรประชาชน</p>
                 <p className='information_text4'>ข้อมูลรูปถ่าย</p>
@@ -18,15 +36,15 @@ function information(){
             </div>
             <p className='information_text2'>ข้อมูลส่วนตัว</p>
             <div className='bg_information2'>
-                <p className='box text-box'>นาย</p>
-                <p className='box2 text-box2'>ชื่อ</p>
-                <p className='box2 text-box2'>นามสกุล</p>
-                <p className='box text-box'>สัญชาติ</p>
-                <p className='box2 text-box2'>เลขบัตรประชาชน</p>
-                <p className='box2 text-box2'>เบอร์โทร</p>
-                <p className='box text-box'>วันเกิด</p>
-                <p className='box2 text-box2'>สถานะ</p>
-                <p className='box2 text-box2'>Email</p>
+                <p className='box text-box'>{data.gender}</p>
+                <p className='box2 text-box2'>{data.firstname}</p>
+                <p className='box2 text-box2'>{data.lastname}</p>
+                <p className='box text-box'>{data.nationality}</p>
+                <p className='box2 text-boxID'>{data.ID_cardNumber}</p>
+                <p className='box2 text-boxID'>{data.tel}</p>
+                <p className='box text-boxday'>{data.birthday}</p>
+                <p className='box2 text-box2'>{data.marital_status}</p>
+                <p className='box2 text-box'>{data.email}</p>
             </div>
             <p className = 'information_text2'>ที่อยู่</p>
             <div className=' bg_information3'>
@@ -50,5 +68,7 @@ function information(){
         </div>
     );
 }
+
+
 
 export default information ;

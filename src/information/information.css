@@ -134,15 +134,15 @@ body{
     grid-template-columns: 1fr ;
     padding-bottom: 5px;
     padding-top: 50px;
-    padding-left: 270px;
+    padding-left: 430px;
 }
 
 
 .box3{
     display: block;
     background-color: white;
-    width: 1300px;
-    height: 150px;
+    width: 900px;
+    height: 100px;
     border: 2px solid rgb(3, 3, 3);
     box-sizing: border-box;
     padding-top: 10px;
@@ -220,4 +220,14 @@ body{
     padding-bottom: 250px;
     padding-top: 10px;
     padding-left: 130px;
+}
+
+.text-boxID{
+    font-size: 20px;
+    padding-left: 140px;
+}
+
+.text-boxday{
+    font-size: 20px;
+    padding-left: 40px;
 }
