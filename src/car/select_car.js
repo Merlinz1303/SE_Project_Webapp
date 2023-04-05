@@ -47,9 +47,9 @@ function select_car(){
                     console.log(data1);
                     return(
                         <div className='car_img'>
-                            <img  src={data1.imageURL} width={300} height={270} ></img>
+                            <img  src={data1.imageURL} width={300} height={250} ></img>
                             <p className='car_text'>{data1.Car}</p>
-                            <p className='car_text2'>{data1.Price}  บาท</p>
+                            <p className='car_text2'>ราคาเริ่มต้น {data1.Price/36} บาท/เดือน</p>
                             <div className='center'>
                                 <button className="btn1">สั่งจอง</button>
                             </div>
