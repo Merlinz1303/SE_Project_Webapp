@@ -1,22 +1,7 @@
 /* Pattarapong Thanakiethirun 6130300654 */
 import './select_car.css';
-import LayoutPage from "../components/LayoutPage";
-import React , {useEffect} from "react";
-import { useSelector , useDispatch} from "react-redux";
-import { getAllCars } from "../Redux/actions/carActions";
-import {Row , Col} from 'antd';
-import './SelectCar.css';
-import {Link} from 'react-router-dom';
-import axios  from 'axios';
 
 function select_car(){
-    const {cars} = useSelector(state=>state.carsReducer)
-    const dispatch = useDispatch()
-  
-    useEffect(() => {
-      dispatch(getAllCars())
-    }, [dispatch]);
-  
     return(
         <div className='select_car_main'>
             <p className='text'>เลือกรถที่คุณต้องการ</p>
@@ -25,7 +10,9 @@ function select_car(){
                 <div className='logo_img' >
                     <img src={("/images/logo/logo1.png")} width={150} height={150}></img>
                 </div>
-
+{/*                 <div className='logo_img'>
+                    <img src={("/images/logo/logo2.png")} width={150} height={150}></img>
+                </div> */}
                 {/* AUDI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo3.png")} width={150} height={150}></img>
@@ -34,12 +21,19 @@ function select_car(){
                 <div className='logo_img'>
                     <img src={("/images/logo/logo4.png")} width={150} height={150}></img>
                 </div>
-
+{/*                 <div className='logo_img'>
+                    <img src={("/images/logo/logo5.png")} width={150} height={150}></img>
+                </div> */}
                 {/* MINI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo6.png")} width={150} height={150}></img>
                 </div>
-
+{/*                 <div className='logo_img'>
+                    <img src={("/images/logo/logo7.png")} width={150} height={150}></img>
+                </div> */}
+{/*                 <div className='logo_img'>
+                    <img src={("/images/logo/logo8.png")} width={150} height={150}></img>
+                </div> */}
                 {/* Tesla */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo9.png")} width={150} height={150}></img>
@@ -48,7 +42,7 @@ function select_car(){
             <div className='select_car_grid'>
                 <div className='car_img'>
                     <img src={("/images/car/car1.png")} width={300} height={270}></img>
-                    <p className='car_text'>{car.Name}</p> 
+                    {/* <p className='car_text'>car1</p> */}
                 </div>
                 <div className='car_img'>
                     <img src={("/images/car/car2.png")}  width={300} height={270}></img>
