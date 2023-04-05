@@ -13,21 +13,18 @@ function select_car(){
             // email: "jamkapp556@gmail.com",
           })
           .then((response) => {
-            console.log(response.data);
-            sendData(response.data[0])
+            /* console.log(response.data); */
+            sendData(response.data)
           });
       }, []);
     return(
         <div className='select_car_main'>
-            <p className='text'>เลือกรถที่คุณต้องการ</p>
+            <p className='select_text'>เลือกรถที่คุณต้องการ</p>
             <div className='logo_grid'>
                 {/* MG */}
                 <div className='logo_img' >
                     <img src={("/images/logo/logo1.png")} width={150} height={150}></img>
                 </div>
-{/*                 <div className='logo_img'>
-                    <img src={("/images/logo/logo2.png")} width={150} height={150}></img>
-                </div> */}
                 {/* AUDI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo3.png")} width={150} height={150}></img>
@@ -36,73 +33,38 @@ function select_car(){
                 <div className='logo_img'>
                     <img src={("/images/logo/logo4.png")} width={150} height={150}></img>
                 </div>
-{/*                 <div className='logo_img'>
-                    <img src={("/images/logo/logo5.png")} width={150} height={150}></img>
-                </div> */}
                 {/* MINI */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo6.png")} width={150} height={150}></img>
                 </div>
-{/*                 <div className='logo_img'>
-                    <img src={("/images/logo/logo7.png")} width={150} height={150}></img>
-                </div> */}
-{/*                 <div className='logo_img'>
-                    <img src={("/images/logo/logo8.png")} width={150} height={150}></img>
-                </div> */}
                 {/* Tesla */}
                 <div className='logo_img'>
                     <img src={("/images/logo/logo9.png")} width={150} height={150}></img>
                 </div>
             </div>
             <div className='select_car_grid'>
-                <div className='car_img'>
-                    <img src={data.imageURL} width={300} height={270}></img>
-                    <p className='car_text'>{data.Car}</p> 
-                    <p className='car_text2'>{data.Price}  บาท</p>
-                </div>
-                <div className='car_img'>
-                    <img src={data.imageURL}  width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src= {("/images/car/car3.png")} width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car4.png")} width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car5.png")}  width={300}  height={270} ></img>
-                </div>
-                <div className='car_img'>
-                    <img src= {("/images/car/car6.png")} width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car7.png")} width={300}  height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car8.png")}  width={300}  height={270} ></img>
-                </div>
-                <div className='car_img'>
-                    <img src= {("/images/car/car9.png")} width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car10.png")} width={300}  height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car11.png")}  width={300}  height={270} ></img>
-                </div>
-                <div className='car_img'>
-                    <img src= {("/images/car/car12.png")} width={300} height={270}></img>
-                </div>
-                <div className='car_img'>
-                    <img src={("/images/car/car1.png")}  width={300}  height={270} ></img>
-                </div>
-                <div className='car_img'>
-                    <img src= {("/images/car/car12.png")} width={300} height={270}></img>
-
-                </div>
-                
-                
+                {data.map((data1) => {
+                    console.log(data1);
+                    return(
+                        <div className='car_img'>
+                            <img  src={data1.imageURL} width={300} height={270} ></img>
+                            <p className='car_text'>{data1.Car}</p>
+                            <p className='car_text2'>{data1.Price}  บาท</p>
+                            <div className='center'>
+                                <button className="btn1">สั่งจอง</button>
+                            </div>
+                        </div>
+                    )
+                    
+                })}
             </div>
+            
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         </div>
     );
 }

@@ -3,8 +3,8 @@
     background-color: rgb(255, 255, 255);
   
 }
-.text{
-    font-size: 30px;
+.select_text{
+    font-size: 50px;
     color: rgb(7, 7, 7);
     text-align: center;
     padding: 30px;
@@ -27,24 +27,26 @@
 .car_img{
     display: block;
     width: 350px;
-    height: 350px;
+    height: 450px;
     border: 2px solid rgb(3, 3, 3);
     box-sizing: border-box;
     border-radius: 10px;
     padding-left: 15px;
     padding-top: 10px;
+    box-shadow:rgba(14,30,37,0.12) 0px 2px 4px 0px, rgba(14,30,37,0.32) 0px 2px 16px 0px;
 }
 
 .car_text{
     font-size: 25px;
     color: black;
-    margin-top: -50px;
-    padding-left: 70px;
+    margin-top: -10px;
+    padding-left: 80px;
+    
 }
 .car_text2{
     font-size: 25px;
     color: black;
-    margin-top: -10px;
+    margin-top: 20px;
     padding-left: 80px;
 }
 
@@ -70,5 +72,19 @@
     padding-top: 50px;
     justify-content: center;
     align-items: center;
+}
+
+.center {
+    text-align: center;
+    margin-left: -30px;
+}
+
+.btn1{
+    box-shadow: none !important;
+    background-color: white !important;
+    color: orangered !important;
+    border: 1px solid orangered !important;
+    width: 100px;
+    height: 40px;
 }
 
