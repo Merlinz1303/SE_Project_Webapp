@@ -7,6 +7,8 @@ import Information from '../information/Information';
 import Contact from '../contact/Contact';
 import {Route, Routes } from 'react-router-dom';
 import SelectCar from '../car/SelectCar';
+import Select_carcop from '../car/select_car copy';
+
 
 
 export default function App() {
