@@ -17,8 +17,6 @@ function information(){
             sendData(response.data[0])
           });
       }, []);
-
-    console.log(data)
     return(
         <div className='information_main'>
             <p className='information_text1'>ข้อมูลส่วนตัว</p>
