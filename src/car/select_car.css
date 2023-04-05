@@ -19,7 +19,7 @@
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr 1fr 1fr ;
-    padding-bottom: 400px;
+    padding-bottom: 20px;
     padding-top: 10px;
     
 }
@@ -27,19 +27,25 @@
 .car_img{
     display: block;
     width: 350px;
-    height: 300px;
+    height: 350px;
     border: 2px solid rgb(3, 3, 3);
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 10px;
     padding-left: 15px;
     padding-top: 10px;
-    justify-content: center;
-    align-items: center;
 }
 
 .car_text{
     font-size: 25px;
     color: black;
+    margin-top: -50px;
+    padding-left: 70px;
+}
+.car_text2{
+    font-size: 25px;
+    color: black;
+    margin-top: -10px;
+    padding-left: 80px;
 }
 
 .logo_grid{

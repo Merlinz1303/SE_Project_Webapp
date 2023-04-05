@@ -27,14 +27,22 @@ body{
 
 
 .profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
- 
-    
+    display: block;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    padding-left: 100px;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 1430px;
 }
+
+.profileCir{
+    border-radius: 50%;
+    margin-left: -170px;
+}
+
 .rect{
     display: flex;
     flex-direction: column;
@@ -68,9 +76,25 @@ body{
     padding-left: 50px;
 }
 
-.car_img{
+.card_img{
     align-items: center;
     justify-content: center;
+    width: 400px;
+    height: 250px;
+}
+
+.card_img2{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.card_img3{
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
 }
 
 .bg_information2{
@@ -229,5 +253,9 @@ body{
 
 .text-boxday{
     font-size: 20px;
+    padding-left: 40px;
+}
+
+.pic{
     padding-left: 40px;
 }

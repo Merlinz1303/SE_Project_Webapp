@@ -13,8 +13,9 @@ function information(){
             // email: "jamkapp556@gmail.com",
           })
           .then((response) => {
-            console.log(response.data);
+            /* console.log(response.data); */
             sendData(response.data[0])
+            console.log(data);
           });
       }, []);
       
@@ -22,16 +23,16 @@ function information(){
         <div className='information_main'>
             <p className='information_text1'>ข้อมูลส่วนตัว</p>
             <div className='profile'>
-                <img  src= {("/images/Profile_pic.png")} width={400} height={400}></img>
+                <img className='profileCir' src={data.peoplecard}></img>
             </div>
             <p className='information_text1'>{data.username}</p>
             <div className='bg_information'>
                 <p className='information_text3'>ข้อมูลรูปบัตรประชาชน</p>
                 <p className='information_text4'>ข้อมูลรูปถ่าย</p>
                 <p className='information_text4'>ข้อมูลรูปใบขับขี่</p>
-                <img className='card_img'  src={("/images/card1.png")}></img>
-                <img className = 'card_img' src={("/images/card2.png")}></img>
-                <img claseeName = 'card_img' src={("/images/card3.png")}></img>
+                <img className='card_img'  src={data.peoplecard}></img>
+                <img className = 'card_img2 pic' src={data.peoplecard}></img>
+                <img claseeName = 'card_img' src={data.drivercard}></img>
             </div>
             <p className='information_text2'>ข้อมูลส่วนตัว</p>
             <div className='bg_information2'>

@@ -1,7 +1,22 @@
 /* Pattarapong Thanakiethirun 6130300654 */
 import './select_car.css';
+import axios from 'axios';
+import React, { useContext, useEffect, useState } from "react";
 
 function select_car(){
+
+    const [data, sendData] = useState([]);
+    useEffect(() => {
+        axios
+          .get("http://localhost:3000/api2", {
+            // amount: totalAmount,
+            // email: "jamkapp556@gmail.com",
+          })
+          .then((response) => {
+            console.log(response.data);
+            sendData(response.data[0])
+          });
+      }, []);
     return(
         <div className='select_car_main'>
             <p className='text'>เลือกรถที่คุณต้องการ</p>
@@ -41,11 +56,12 @@ function select_car(){
             </div>
             <div className='select_car_grid'>
                 <div className='car_img'>
-                    <img src={("/images/car/car1.png")} width={300} height={270}></img>
-                    {/* <p className='car_text'>car1</p> */}
+                    <img src={data.imageURL} width={300} height={270}></img>
+                    <p className='car_text'>{data.Car}</p> 
+                    <p className='car_text2'>{data.Price}  บาท</p>
                 </div>
                 <div className='car_img'>
-                    <img src={("/images/car/car2.png")}  width={300} height={270}></img>
+                    <img src={data.imageURL}  width={300} height={270}></img>
                 </div>
                 <div className='car_img'>
                     <img src= {("/images/car/car3.png")} width={300} height={270}></img>
