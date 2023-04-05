@@ -6,13 +6,15 @@ import Booking from '../Booking/Booking_car';
 import Information from '../information/Information';
 import Contact from '../contact/Contact';
 import {Route, Routes } from 'react-router-dom';
+import SelectCar from '../car/SelectCar';
+
 
 export default function App() {
   return (
     <div className="App">
       <Navbar/>
       <Routes>
-          <Route path='/Select_car' element = {<Select_car/>}></Route>
+          <Route path='/SelectCar' element = {<SelectCar/>}></Route>
           <Route path='/Booking' element = {<Booking/>}></Route>
           <Route path='/Contact' element = {<Contact/>}></Route>
           <Route path='/Information' element = {<Information/>}></Route>

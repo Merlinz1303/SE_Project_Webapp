@@ -10,7 +10,7 @@ export default function Navbar(){
             </div>  
             <ul>
                 <CustomLink to ='/Information' className='menu_text' >เกี่ยวกับ</CustomLink>  
-                <CustomLink to ='/Select_car' className='menu_text' >เลือกรถ</CustomLink>
+                <CustomLink to ='/SelectCar' className='menu_text' >เลือกรถ</CustomLink>
                 <CustomLink to ='/Register' className='menu_text'>วิธีสมัคร</CustomLink>
                 <CustomLink to ='/Contact' className='menu_text'>ติดต่อ/สอบถาม</CustomLink>
                 <CustomLink to ='/Booking' className='menu_text'>ข้อมูลการจอง</CustomLink>
