@@ -23,7 +23,7 @@ function information(){
         <div className='information_main'>
             <p className='information_text1'>ข้อมูลส่วนตัว</p>
             <div className='profile'>
-                <img className='profileCir' src={data.peoplecard}></img>
+                <img className='profileCir' src={data.profile} width={400}  height={400}></img>
             </div>
             <p className='information_text1'>{data.username}</p>
             <div className='bg_information'>
@@ -31,7 +31,7 @@ function information(){
                 <p className='information_text4'>ข้อมูลรูปถ่าย</p>
                 <p className='information_text4'>ข้อมูลรูปใบขับขี่</p>
                 <img className='card_img'  src={data.peoplecard}></img>
-                <img className = 'card_img2 pic' src={data.peoplecard}></img>
+                <img className = 'card_img2 pic' src={data.profile}></img>
                 <img claseeName = 'card_img' src={data.drivercard}></img>
             </div>
             <p className='information_text2'>ข้อมูลส่วนตัว</p>
@@ -48,21 +48,21 @@ function information(){
             </div>
             <p className = 'information_text2'>ที่อยู่</p>
             <div className=' bg_information3'>
-                <p className='box3 text-box3'>ที่อยู่</p>
+                <p className='box3 text-box3'>{data.Address}</p>
             </div>
             <div className='bg_information4'>
-                <p className='box4 text-box' > ตำบล</p>
-                <p className='box4 text-box'>อำเภอ</p>
-                <p className='box4 text-box'>จังหวัด</p>
-                <p className='box4 text-box'>รหัสไปรษณีย์</p> 
+                <p className='box4 text-box' > {data.subdistrict}</p>
+                <p className='box4 text-box'>{data.city}</p>
+                <p className='box4 text-box'>{data.province}</p>
+                <p className='box4 text-box'>{data.zipcode}</p> 
             </div>
             <p className='information_text2'>ข้อมูลบริษัท</p>
             <div className='bg_information5'>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
-                <p className='box5 text-box2'>asd</p>
+                <p className='box5 text-box'>ชื่อบริษัท : {data.companyname}</p>
+                <p className='box5 text-box'>ประเภทธุรกิจ : {data.companytype}</p>
+                <p className='box5 text-box'>email : {data.companyemail}</p>
+                <p className='box5 text-box'>เบอร์โทร : {data.companytel}</p>
+                <p className='box5 text-box'>เงินเดือน : {data.salary}</p>
             </div>
             <div className='bg_informationFree'></div>
         </div>

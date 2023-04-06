@@ -16,11 +16,10 @@ body{
 }
 
 .information_text2{
-        font-size: 20px;
+        font-size: 30px;
         color: rgb(253, 253, 253);
-        margin-left: 650px;
+        margin-left: 450px;
         padding-top: 50px;
-        padding-left: 50px;
         padding-bottom: 50px;
 
 }
@@ -32,7 +31,7 @@ body{
     height: 300px;
     box-sizing: border-box;
     border-radius: 50%;
-    padding-left: 100px;
+    padding-left: 140px;
     padding-top: 10px;
     margin-bottom: 100px;
     margin-left: 1430px;
@@ -41,6 +40,7 @@ body{
 .profileCir{
     border-radius: 50%;
     margin-left: -170px;
+    margin-top: -40px;
 }
 
 .rect{
@@ -56,7 +56,7 @@ body{
     background-color: rgba(236, 228, 228, 0.325);
     column-gap: 150px;
     row-gap: 70px;
-    max-width: 1800px;
+    max-width: 2300px;
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr 1fr 1fr ;
@@ -102,7 +102,7 @@ body{
     background-color: rgba(236, 228, 228, 0.325);
     column-gap: 20px;
     row-gap: 15px;
-    max-width: 1800px;
+    max-width: 2300px;
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr 1fr 1fr ;
@@ -152,7 +152,7 @@ body{
     background-color: rgba(236, 228, 228, 0.325);
     column-gap: 20px;
     row-gap: 15px;
-    max-width: 1800px;
+    max-width: 2300px;
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr ;
@@ -165,7 +165,7 @@ body{
 .box3{
     display: block;
     background-color: white;
-    width: 900px;
+    width: 1200px;
     height: 100px;
     border: 2px solid rgb(3, 3, 3);
     box-sizing: border-box;
@@ -176,7 +176,7 @@ body{
 }
 
 .text-box3{
-    padding-left: 70px;
+    padding-left: 120px;
     font-size: 20px;
 }
 
@@ -198,7 +198,7 @@ body{
     background-color: rgba(236, 228, 228, 0.325);
     column-gap: 20px;
     row-gap: 15px;
-    max-width: 1800px;
+    max-width: 2300px;
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -224,7 +224,7 @@ body{
     background-color: rgba(236, 228, 228, 0.325);
     column-gap: 0px;
     row-gap: 10px;
-    max-width: 1800px;
+    max-width: 2300px;
     margin-right: auto;
     margin-left: auto; 
     grid-template-columns: 1fr 1fr  ;
