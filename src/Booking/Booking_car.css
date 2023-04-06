@@ -1,24 +1,28 @@
 /* Pattarapong Thanakiethirun 6130300654 */
-.text{
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  thead th {
+    background-color: #f2f2f2;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
-.text2{
-    font-size: 20px;
-    color: black;
-    padding-left: 100px ;
-}
-
-.Book_main{
-    background-color: rgb(255, 255, 255);
-}
-
-.Menu_bar{
-
-}
-
-.Footer2{
-    padding-top: 500px;
-}
+  .book_text{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1300px;
+    
+  }
