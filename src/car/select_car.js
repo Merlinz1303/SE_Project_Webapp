@@ -17,6 +17,11 @@ function select_car(){
             sendData(response.data)
           });
       }, []);
+    
+    const book = () => {
+        alert("Booking");
+    }
+
     return(
         <div className='select_car_main'>
             <p className='select_text'>เลือกรถที่คุณต้องการ</p>
@@ -51,7 +56,7 @@ function select_car(){
                             <p className='car_text'>{data1.Car}</p>
                             <p className='car_text2'>ราคาเริ่มต้น {data1.Price/36} บาท/เดือน</p>
                             <div className='center'>
-                                <button className="btn1">สั่งจอง</button>
+                                <button className="btn1" onClick={book}>สั่งจอง</button>
                             </div>
                         </div>
                     )
