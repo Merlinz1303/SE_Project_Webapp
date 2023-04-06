@@ -2,7 +2,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: 25px;
   }
   
   thead th {
@@ -25,4 +25,11 @@ table {
     margin-bottom: 30px;
     margin-left: 1300px;
     
+  }
+
+  .booking {
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 500px;
   }

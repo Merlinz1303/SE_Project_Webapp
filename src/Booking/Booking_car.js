@@ -7,7 +7,7 @@ import data from './data.json';
 function Booking() {
   return (
     <body>
-    <div>
+    <div className='booking'>
       <p className='book_text'>ข้อมูลการจอง</p>
       <table>
         <thead>
